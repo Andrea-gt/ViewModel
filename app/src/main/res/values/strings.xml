@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ViewModel_Observables</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="emailInput">Correo</string>
+    <string name="passwordInput">Contraseña</string>
+    <string name="nameTextLogin">Andrea Ramirez</string>
+    <string name="loginText">Iniciar Sesion</string>
+    <string name="valid_Email">ram21874@uvg.edu.gt</string>
+    <string name="keep_session_active_string">Mantener sesion activa</string>
+    <string name="logOut_text">Cerrar sesion</string>
+    <string name="default_string">Default</string>
+    <string name="success_string">Success</string>
+    <string name="faliure_string">Failure</string>
+    <string name="empty_string">Empty</string>
+    <string name="successful_operation_string">Operacion exitosa</string>
+    <string name="default_string_for_home_fragment">Selecciona una opcion</string>
+    <string name="empty_string_for_home_fragment">Sin resultados</string>
+    <string name="success_string_for_home_fragment">Operacion exitosa</string>
+    <string name="failure_string_for_home_fragment">Operacion fallida</string>
+
+</resources>

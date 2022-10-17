@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <Button
+        android:id="@+id/button_keepSessionActive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/keep_session_active_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_logOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logOut_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_keepSessionActive"
+        />
+
+    <Button
+        android:id="@+id/button_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_string"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_success"
+        app:layout_constraintTop_toBottomOf="@id/button_logOut"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        />
+
+    <Button
+        android:id="@+id/button_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/success_string"
+        app:layout_constraintStart_toEndOf="@id/button_default"
+        app:layout_constraintEnd_toStartOf="@id/button_failure"
+        app:layout_constraintTop_toBottomOf="@id/button_logOut"
+        />
+
+
+    <Button
+        android:id="@+id/button_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faliure_string"
+        app:layout_constraintStart_toEndOf="@id/button_success"
+        app:layout_constraintEnd_toStartOf="@id/button_empty"
+        app:layout_constraintTop_toBottomOf="@id/button_logOut"
+        />
+
+    <Button
+        android:id="@+id/button_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_string"
+        app:layout_constraintStart_toEndOf="@id/button_failure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_logOut"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/image_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_success"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_homeFragment_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="@string/successful_operation_string"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_home"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
